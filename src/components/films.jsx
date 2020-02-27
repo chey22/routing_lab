@@ -30,6 +30,9 @@ class Films extends Component {
               <div className="card-body">
                 <h5 className="card-title">{film.title}</h5>
                 <p className="card-text">{film.description}</p>
+                <Link to={`/films/${film.id}`}>
+                  <button className="btn btn-sm btn-dark">Learn More</button>
+                </Link>
               </div>
             </div>
           );
